@@ -33,3 +33,5 @@ stages:
         containerRegistry: 'dockerHub-lglearn-conn'
         repository: 'devopslg/angular-app-1'
         command: 'push'
+        tags: |
+          $(tag)
