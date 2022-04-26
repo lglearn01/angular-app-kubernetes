@@ -23,6 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
+        repository: 'devopslg/angular-app-1'
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
